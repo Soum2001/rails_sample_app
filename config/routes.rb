@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
 
-  get 'static_pages/help'
+ 
+  
+  match '/signup', to: 'users#new', via: 'get'
+  match '/home', to: 'static_pages#home', via: 'get'
+  match '/help', to: 'static_pages#help', via: 'get'
+
   # put 'movies/:id/update', controller: 'movies', action: 'update'
 
   # The priority is based upon order of creation: first created -> highest priority.
