@@ -4,7 +4,7 @@
 
 $grayMediumLight: #eaeaea;
 $grayLight: #999;
-$grayDarker:#fff;
+$grayDarker:#222;
 /* universal */
 
 html {
@@ -102,4 +102,7 @@ footer {
       margin-left: 10px;
     }
   }
+}
+#railsLogo{
+  width: 100px;
 }
