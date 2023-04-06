@@ -53,5 +53,6 @@ end
 
 gem 'bootstrap-sass'
 gem 'sprockets'
+gem 'bcrypt'
 
 
