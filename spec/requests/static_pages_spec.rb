@@ -1,7 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe "StaticPages", type: :request do
+
   subject { page }
+  
   describe "home page" do
     before { visit home_path }
     let(:heading)    { 'Sample App' }
@@ -63,5 +65,6 @@ RSpec.describe "StaticPages", type: :request do
     click_link "About"
     expect(page).to have_title(full_title('About'))
   end
+
 end
 
